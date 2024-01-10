@@ -39,6 +39,12 @@ if(computerMove == 'kamień' && playerMove == 'papier') {
     printMessage(`Ja wygrywam!`);
 } else if (computerMove == 'kamień' && playerMove == 'nożyce') {
     printMessage(`Ja wygrywam!`);
+}  else if (computerMove == 'kamień' && playerMove == 'kamień') {
+    printMessage(`Remis!`);
+} else if (computerMove == 'papier' && playerMove == 'papier') {
+    printMessage(`Remis!`);
+}else if (computerMove == 'nożyce' && playerMove == 'nożyce') {
+    printMessage(`Remis!`);
 } else {
     printMessage(`Ups... Coś poszło nie tak, spróbuj jeszcze raz.`)
 }
