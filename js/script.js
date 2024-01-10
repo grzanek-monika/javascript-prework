@@ -27,6 +27,21 @@ if(playerInput == '1') {
 
 printMessage(`Twój ruch to: ${playerMove}`);
 
+if(computerMove == 'kamień' && playerMove == 'papier') {
+    printMessage(`Ty wygrywasz!`);
+} else if (computerMove == 'papier' && playerMove == 'nożyce') {
+    printMessage(`Ty wygrywasz!`);
+} else if (computerMove == 'nożyce' && playerMove == 'kamień') {
+    printMessage(`Ty wygrywasz!`);
+} else if (computerMove == 'papier' && playerMove == 'kamień') {
+    printMessage(`Ja wygrywam!`);
+} else if (computerMove == 'nożyce' && playerMove == 'papier') {
+    printMessage(`Ja wygrywam!`);
+} else if (computerMove == 'kamień' && playerMove == 'nożyce') {
+    printMessage(`Ja wygrywam!`);
+} else {
+    printMessage(`Ups... Coś poszło nie tak, spróbuj jeszcze raz.`)
+}
 /*printMessage('Zagrałem kamień! Jeśli Twój ruch to papier, to wygrywasz!');
 
 let computerMove = `kamień`;
